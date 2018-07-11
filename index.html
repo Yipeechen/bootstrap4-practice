@@ -16,9 +16,12 @@
     <!-- row：一行可以塞入多組col，使用了flex來佈局 -->
     <div class="row">
       <!-- col：每一等分，使用了flex-grow分配比例 -->
-      <div class="col"><span>1</span></div>
-      <div class="col"><span>2</span></div>
-      <div class="col"><span>3</span></div>
+      <!-- col-6：指定占據六等分，使用了一行共12欄的網格系統，若一行超出12欄，則多出來的col會整個跳到下一行-->
+      <div class="col-6"><span>1</span></div>
+      <div class="col-4"><span>2</span></div>
+      <div class="col-2"><span>3</span></div>
+      <!-- w-100：等寬度多行，欄位另外分隔在另一行，建立等寬度欄位 -->
+      <div class="w-100"></div>
       <div class="col"><span>1</span></div>
       <div class="col"><span>2</span></div>
       <div class="col"><span>3</span></div>
