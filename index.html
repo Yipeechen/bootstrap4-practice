@@ -49,6 +49,15 @@
       <div class="col-4"><span>1</span></div>
       <div class="col-4"><span>2</span></div>
     </div>
+
+    <!-- 排列順序oder ＆ 偏移offset -->
+    <div class="row">
+      <!-- order-first：排列的順序轉為第一個，使用了flex中order: -1 屬性
+           order-$：排列的順序轉為第$個，用來指定各區塊順序，($ = 1~12) -->
+      <!-- offset-$：偏移$個網格數，使用了 margin-left: %屬性 -->
+      <div class="col-4 order-2 offset-2"><span>1</span></div>
+      <div class="col-4 order-1 offset-1"><span>2</span></div>
+    </div>
   </div>
 
 
