@@ -13,7 +13,16 @@
   <!-- container：給元素添加固定的寬度，隨的窗口大小改變，應用到media queries(@media)響應式框架，設置了break point -->
   <!-- container-fulid：寬度會是100% -->
   <div class="container demo"> 
-    <h1>hello world</h1>
+    <!-- row：一行可以塞入多組col，使用了flex來佈局 -->
+    <div class="row">
+      <!-- col：每一等分，使用了flex-grow分配比例 -->
+      <div class="col"><span>1</span></div>
+      <div class="col"><span>2</span></div>
+      <div class="col"><span>3</span></div>
+      <div class="col"><span>1</span></div>
+      <div class="col"><span>2</span></div>
+      <div class="col"><span>3</span></div>
+    </div>
   </div>
 
 

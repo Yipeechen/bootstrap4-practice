@@ -4,3 +4,17 @@
   color: white;
   -webkit-font-smoothing: antialiased; /* 字體防鋸齒屬性 */
 }
+
+.container.demo .row{
+  background-color: #021d51;
+  border-bottom: 1px solid#000;
+}
+
+.container.demo .row > div > span {
+  background-color: #487bdd;
+  display: block;
+  color: white;
+  font-size: 32px;
+  padding: 8px;
+  border: 1px solid#021d51;
+}
