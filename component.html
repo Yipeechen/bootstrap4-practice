@@ -14,11 +14,18 @@
 <body>
 
   <div class="component demo">
-    <!-- ALERT: alert alert-primary >> alert-link -->
-    <div class="alert alert-primary" role="alert">
+    <!-- ALERT: alert alert-primary >> alert-link-->
+    <!-- ALERT效果：加上class="fade show" 提醒顯示會漸漸消失 -->
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
       <h4>Alert</h4>
       Hello! <a href="#" class="alert-link">內容裡的連結</a>
+      <!-- 可關閉提示的按鈕: class="close" >> &times; >> data-dismiss="alert" >> div加上class="alert-dismissible"-->
+      <button class="close" data-dismiss="alert">
+        &times;
+      </button>
     </div>
+    <!-- ALERT外的關閉按鈕:使用js -->
+    <button type="button" class="btn btn-danger js-close-alert">Close</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
