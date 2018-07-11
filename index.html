@@ -26,6 +26,18 @@
       <div class="col"><span>2</span></div>
       <div class="col"><span>3</span></div>
     </div>
+
+    <!-- align-items-start：row內默認的垂直對齊方式
+          align-items-end：對齊尾端
+          align-items-center：對齊置中，使用了flex中align-items:center屬性 -->
+    <div class="row align-items-center">
+      <!-- align-self-start：特定某一col在row裡面的對齊方式，使用了flex中align-self:flex-start屬性，對齊起始 -->
+      <div class="col-6 align-self-start"><span>1</span></div>
+      <!-- align-self-center：垂直置中 -->
+      <div class="col-4 align-self-center"><span>2</span></div>
+      <!-- align-self-end：對齊底部 -->
+      <div class="col-2 align-self-end"><span>3</span></div>
+    </div>
   </div>
 
 
