@@ -37,6 +37,19 @@
     </button>
   </div>
 
+    <div class="component demo">
+      <!-- BREADCRUMB: 導航路徑顯示使用者位置
+           breadcrumb >> breadcrumb-item >> active(現在位置) -->
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <!-- 分隔符號『/』使用了偽元素:before，可寫入content:'*' 更改樣式-->
+          <li class="breadcrumb-item"><a href="#">課程</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+        </ol>
+      </nav>
+    </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
