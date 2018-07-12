@@ -194,6 +194,25 @@
       </div>
     </div>
 
+    <div class="component demo">
+      <!-- COLLAPSE連結: href="呼叫內容的id" >> data-toggle="collapse" -->
+      <a href="#collapse-demo"
+         class="btn btn-primary"
+         data-toggle="collapse">action link</a>
+
+      <!-- COLLAPSE按鈕: data-target="呼叫內容的id" >> data-toggle="collapse" -->
+      <button 
+         class="btn btn-warning"
+         data-toggle="collapse"
+         data-target="#collapse-demo">action button</button>
+      <!-- COLLAPSE: 本身內容不會在介面上顯示，使用連結按鈕呼叫，加入id -->
+      <div class="collapse" id="collapse-demo">
+        <div class="card card-body">
+          Message: Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+    </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
