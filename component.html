@@ -499,6 +499,27 @@
         <label for="email">郵件地址</label>
         <input id="email" class="form-control" type="text" placeholder="Email">
         <small class="form-text text-muted">請輸入正確的電子郵件地址，接收重要的通知</small>
+
+        <!-- input變化：
+            readonly屬性: 只能讀，無法選中輸入的狀態
+            ::form-control-plaintext:把只讀的文字換成文字狀態 -->
+        <input type="text" class="form-control form-control-sm" placeholder="輸入..." readonly>
+        <input type="text" class="form-control-plaintext form-control-sm" placeholder="輸入..." readonly>
+
+        <!-- input-group組合：
+              input-group >> 
+              input-group-prepend >> span.input-group-text 
+              input element >>
+              input-group-append >> button -->
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="text somthing...">
+          <div class="input-group-append">
+            <button class="btn btn-primary">Go</button>
+          </div>
+        </div>
       </div>
       
 
