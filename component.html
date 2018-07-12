@@ -10,8 +10,40 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="/style.css">
 </head>
+<!-- SCROLLSPY: 滾動頁面的時候，自動切換導航項目狀態
+    body::data-spy="scroll"
+        ::data-target="#nav-demo" -->
+<body data-spy="scroll" data-target="#nav-demo">
 
-<body>
+  <div class="component demo">
+    <div class="row">
+      <div class="col-3">
+        <!-- SCROLLSPY: 欲切換的導航項目加上id -->
+        <ul id="nav-demo" class="nav nav-pills flex-column position-fixed bg-light p-4 text-right">
+          <li class="nav-item">
+            <a href="#html" class="nav-link">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a href="#css" class="nav-link">Css</a>
+          </li>
+          <li class="nav-item">
+            <a href="#javascript" class="nav-link">JavaScript</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-9">
+        <h3 id="html">HTML</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus iusto laborum, velit officiis aut dolorum eligendi cumque quae earum repellat inventore suscipit autem optio ipsam id numquam exercitationem labore enim et rerum explicabo odit. Esse, molestias aperiam odio error expedita nesciunt natus illo eaque sequi suscipit? Cupiditate ipsum odit consequuntur similique dolorem reiciendis dolorum impedit necessitatibus laudantium maiores. Illo necessitatibus consequatur eligendi iste quam? Eos enim corporis, accusantium molestiae doloremque reiciendis explicabo architecto consectetur mollitia itaque pariatur totam, autem quidem iusto blanditiis eveniet, ea voluptatum voluptatibus minus asperiores nobis. Inventore exercitationem nihil, sit ipsam assumenda repellat mollitia! Cumque, impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus iusto laborum, velit officiis aut dolorum eligendi cumque quae earum repellat inventore suscipit autem optio ipsam id numquam exercitationem labore enim et rerum explicabo odit. Esse, molestias aperiam odio error expedita nesciunt natus illo eaque sequi suscipit? Cupiditate ipsum odit consequuntur similique dolorem reiciendis dolorum impedit necessitatibus laudantium maiores. Illo necessitatibus consequatur eligendi iste quam? Eos enim corporis, accusantium molestiae doloremque reiciendis explicabo architecto consectetur mollitia itaque pariatur totam, autem quidem iusto blanditiis eveniet, ea voluptatum voluptatibus minus asperiores nobis. Inventore exercitationem nihil, sit ipsam assumenda repellat mollitia! Cumque, impedit.</p>
+        <h3 id="css">CSS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus iusto laborum, velit officiis aut dolorum eligendi cumque quae earum repellat inventore suscipit autem optio ipsam id numquam exercitationem labore enim et rerum explicabo odit. Esse, molestias aperiam odio error expedita nesciunt natus illo eaque sequi suscipit? Cupiditate ipsum odit consequuntur similique dolorem reiciendis dolorum impedit necessitatibus laudantium maiores. Illo necessitatibus consequatur eligendi iste quam? Eos enim corporis, accusantium molestiae doloremque reiciendis explicabo architecto consectetur mollitia itaque pariatur totam, autem quidem iusto blanditiis eveniet, ea voluptatum voluptatibus minus asperiores nobis. Inventore exercitationem nihil, sit ipsam assumenda repellat mollitia! Cumque, impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus iusto laborum, velit officiis aut dolorum eligendi cumque quae earum repellat inventore suscipit autem optio ipsam id numquam exercitationem labore enim et rerum explicabo odit. Esse, molestias aperiam odio error expedita nesciunt natus illo eaque sequi suscipit? Cupiditate ipsum odit consequuntur similique dolorem reiciendis dolorum impedit necessitatibus laudantium maiores. Illo necessitatibus consequatur eligendi iste quam? Eos enim corporis, accusantium molestiae doloremque reiciendis explicabo architecto consectetur mollitia itaque pariatur totam, autem quidem iusto blanditiis eveniet, ea voluptatum voluptatibus minus asperiores nobis. Inventore exercitationem nihil, sit ipsam assumenda repellat mollitia! Cumque, impedit.</p>
+        <h3 id="javascript">JavaScript</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus iusto laborum, velit officiis aut dolorum eligendi cumque quae earum repellat inventore suscipit autem optio ipsam id numquam exercitationem labore enim et rerum explicabo odit. Esse, molestias aperiam odio error expedita nesciunt natus illo eaque sequi suscipit? Cupiditate ipsum odit consequuntur similique dolorem reiciendis dolorum impedit necessitatibus laudantium maiores. Illo necessitatibus consequatur eligendi iste quam? Eos enim corporis, accusantium molestiae doloremque reiciendis explicabo architecto consectetur mollitia itaque pariatur totam, autem quidem iusto blanditiis eveniet, ea voluptatum voluptatibus minus asperiores nobis. Inventore exercitationem nihil, sit ipsam assumenda repellat mollitia! Cumque, impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus iusto laborum, velit officiis aut dolorum eligendi cumque quae earum repellat inventore suscipit autem optio ipsam id numquam exercitationem labore enim et rerum explicabo odit. Esse, molestias aperiam odio error expedita nesciunt natus illo eaque sequi suscipit? Cupiditate ipsum odit consequuntur similique dolorem reiciendis dolorum impedit necessitatibus laudantium maiores. Illo necessitatibus consequatur eligendi iste quam? Eos enim corporis, accusantium molestiae doloremque reiciendis explicabo architecto consectetur mollitia itaque pariatur totam, autem quidem iusto blanditiis eveniet, ea voluptatum voluptatibus minus asperiores nobis. Inventore exercitationem nihil, sit ipsam assumenda repellat mollitia! Cumque, impedit.</p>
+      </div>
+    </div>
+  </div>
 
   <div class="component demo">
     <!-- ALERT: alert alert-primary >> alert-link-->
@@ -446,6 +478,8 @@
           </div>
         </div>
       </div>
+
+      
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
