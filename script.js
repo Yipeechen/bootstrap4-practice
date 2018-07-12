@@ -53,4 +53,29 @@ $(function(){
     $('#js-dropdown').on('hidden.bs.dropdown', () => {
       console.log('hidden')
     })
-});
+
+    //LISTGROUP:點擊顯示該對應的內容
+    const list = $('#js-tab-demo .list-group a')
+    list.on('click', function(event){
+      event.preventDefault();
+      $(this).tab('show')
+    })
+
+    //LISTGROUP觸發事件
+    //開始顯示時
+    list.on('show.bs.tab',function(event){
+      console.log(`開始顯示：${ event.target.getAttribute('href')}`)
+    })
+    //完全顯示時
+    list.on('shown.bs.tab',function(event){
+      console.log(`完全顯示：${ event.target.getAttribute('href')}`)
+    })
+    //開始隱藏時
+    list.on('hide.bs.tab',function(event){
+      console.log(`開始隱藏：${ event.target.getAttribute('href')}`)
+    })
+    //完全隱藏時
+    list.on('hidden.bs.tab',function(event){
+      console.log(`完全隱藏：${ event.target.getAttribute('href')}`)
+    })
+  });
