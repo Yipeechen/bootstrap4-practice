@@ -213,6 +213,28 @@
       </div>
     </div>
 
+    <div class="component demo">
+      <!-- COLLAPSE-ACCORDION: data-parent="accordion"/ 預設顯示：class="show" -->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapse-1" data-toggle="collapse">Title1: Lorem ipsum dolor sit amet.</a>
+          </div>
+          <div class="collapse show" id="collapse-1" data-parent="#accordion">
+            <div class="card-body">Message Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eligendi maiores eius, officiis veniam laboriosam quis quasi dicta eos, officia molestiae ullam fuga amet facere. Sapiente consequatur itaque dignissimos quis?</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapse-2" data-toggle="collapse">Title2: Lorem, ipsum dolor.</a>
+          </div>
+          <div class="collapse" id="collapse-2" data-parent="#accordion">
+            <div class="card-body">Message: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit ratione necessitatibus quidem nam eos, earum nesciunt eligendi eveniet inventore, atque labore. Incidunt, molestias rerum!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
