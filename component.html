@@ -253,14 +253,16 @@
             <a href="#" class="dropdown-item">More</a>
           </div>
 
-
-          <div class="btn-group">
+          <!-- DROPDOWN顯示：dropup/dropdown/dropleft/dropright(方向) -->
+          <div class="btn-group dropup">
             <a href="#" class="btn btn-warning">Dropdown</a>
             <!-- DROPDOWN分離式: dropdown-toggle-split 
                           隱藏文字剩下圖標箭頭加入span >> class="sr-only" 表示screen reader only -->
-            <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><span class="sr-only">Toggle Dropdown</span></button>
-            
-            <div class="dropdown-menu">
+            <!-- DROPDOWN偏移：data-offset="20"向右偏移 -->
+            <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+            data-offset="20"><span class="sr-only">Toggle Dropdown</span></button>
+            <!-- DROPDOWN對齊方向：dropdown-menu-left/ dropdown-menu-right -->
+            <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-header">Web language</div>
               <a href="#" class="dropdown-item">HTML</a>
               <a href="#" class="dropdown-item">Css</a>
