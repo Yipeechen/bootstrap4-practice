@@ -99,4 +99,7 @@ $(function(){
 
     //POPOVERS
     $('[data-toggle="popover"]').popover()
+
+    //TOOLTIP
+    $('[data-toggle="tooltip"]').tooltip()
   });
