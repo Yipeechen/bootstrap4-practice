@@ -165,7 +165,14 @@
     <div class="component demo">
       <!-- CAROUSEL: carousel >> carousel-inner >> carousel-item >> active(首先顯示的) >> data-ride(跑馬燈) >> slide(效果) -->
       <!-- CAROUSEL圖片：d-block 表示 display: block / w-100 表示 width:100% -->
-      <div class="carousel slide" data-ride="carousel">
+      <!-- CAROUSEL元件：點擊切換加上id  -->
+      <div class="carousel slide" id="carousel-demo">
+        <!-- CAROUSEL導航指示： carousel-indicators >> data-target & data-slide-to(幻燈片索引號) >> active -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-demo" data-slide-to="1"></li>
+          <li data-target="#carousel-demo" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="https://picsum.photos/1200/600" alt="">
@@ -177,6 +184,13 @@
             <img class="d-block w-100" src="https://picsum.photos/1200/602" alt="">
           </div>
         </div>
+        <!-- CAROUSEL元件： carousel-control-prev >> &-icon/ carousel-control-next >> &-icon -->
+        <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
     </div>
 
