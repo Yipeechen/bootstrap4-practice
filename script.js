@@ -35,4 +35,22 @@ $(function(){
         到： ${ event.to }
       `)
     })
+
+    //DROPDOWN觸發事件
+    //開始顯示時
+    $('#js-dropdown').on('show.bs.dropdown', () => {
+      console.log('show')
+    })
+    //完全顯示後
+    $('#js-dropdown').on('shown.bs.dropdown', () => {
+      console.log('shown')
+    })
+    //開始隱藏時
+    $('#js-dropdown').on('hide.bs.dropdown', () => {
+      console.log('hide')
+    })
+    //完成隱藏時
+    $('#js-dropdown').on('hidden.bs.dropdown', () => {
+      console.log('hidden')
+    })
 });
