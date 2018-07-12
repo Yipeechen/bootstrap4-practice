@@ -371,9 +371,12 @@
         <!-- NAVBAR: navbar
           &  navbar-expand{-sm|-md|-lg|-xl} 斷點處理響應式的折疊 / navbar-light(樣式) bg-light: 使用background-color屬性 
           >> a::navbar-brand >> ul::navbar-nav >> li::nav-item >> a::nav-link -->
+          <!-- fixed-top:使用position:fixed屬性，固定在頁面上方
+               sticky-top:使用position:sticky屬性，貼齊於頂端，顯示在原位直到滾動遇到頁面頂部及貼齊於頂部 -->
         <nav class="navbar
                     navbar-expand-md
-                    navbar-light bg-light">
+                    navbar-light bg-light
+                    sticky-top">
           <a href="#" class="navbar-brand">Yiping</a>
           <!-- NAVBAR: RWD 漢堡按鈕設計 button::navnar-toggler / data-toggle/data-target >> span >> div::collapse & navbar-collapse + id 裝入內容 -->
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
