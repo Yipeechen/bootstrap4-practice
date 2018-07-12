@@ -78,4 +78,22 @@ $(function(){
     list.on('hidden.bs.tab',function(event){
       console.log(`完全隱藏：${ event.target.getAttribute('href')}`)
     })
+
+    //MODAL
+    //開始顯示時
+    $('#modal-demo').on('show.bs.modal', function(){
+      console.log('show')
+    })
+    //完全顯示時
+    $('#modal-demo').on('shown.bs.modal', function(){
+      console.log('shown')
+    })
+    //開始隱藏時
+    $('#modal-demo').on('hide.bs.modal', function(){
+      console.log('hide')
+    })
+    //完全隱藏時
+    $('#modal-demo').on('hidden.bs.modal', function(){
+      console.log('hidden')
+    })
   });
