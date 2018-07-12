@@ -301,6 +301,25 @@
             <span class="badge badge-primary badge-pill">12</span>
           </a>
         </div>
+        <br>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group">
+              <!-- LIST-GROUP切換顯示標籤內容：加入 data-toggle="list" href="#id-name"-->
+              <a data-toggle="list" href="#html-content" class="list-group-item list-group-item-action active">HTML</a>
+              <a data-toggle="list" href="#js-content" class="list-group-item list-group-item-action">JavaScript</a>
+              <a data-toggle="list" href="#css-content" class="list-group-item list-group-item-action">Css</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <!-- LIST-GROUP切換顯示標籤內容：tab-content >> tab-pane & fade(效果) & id >> (當前顯示)show & active-->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html-content">Hello HTML</div>
+              <div class="tab-pane fade" id="js-content">Hello JS</div>
+              <div class="tab-pane fade" id="css-content">Hello CSS</div>
+            </div>
+          </div>
+        </div>
       </div>
 
 
