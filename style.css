@@ -24,3 +24,13 @@
   margin: 50px auto;
   width: 80%;
 }
+
+.carousel.setting-height .carousel-item {
+  height: 600px;
+}
+
+.carousel.setting-height .carousel-item img {
+  min-height: 600px;
+  max-height: 700px;
+  object-fit: cover;  /* 保持圖像原有比例 */
+}
