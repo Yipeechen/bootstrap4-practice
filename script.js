@@ -96,4 +96,7 @@ $(function(){
     $('#modal-demo').on('hidden.bs.modal', function(){
       console.log('hidden')
     })
+
+    //POPOVERS
+    $('[data-toggle="popover"]').popover()
   });
