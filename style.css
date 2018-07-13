@@ -1,3 +1,12 @@
+/* 定義input欄位的文字內容 */
+.custom-file-label:lang(zh-Hant-TW)::before {
+  content: '選擇文件...';
+}
+/* 定義button欄位的文字內容 */
+.custom-file-label:lang(zh-Hant-TW)::after {
+  content: '開啟';
+}
+
 .container.demo {
   background-color: #054bd1;
   height: 100vh;

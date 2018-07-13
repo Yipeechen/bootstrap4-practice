@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
   <meta charset="UTF-8">
@@ -590,6 +590,15 @@
           <option value="b">B</option>
           <option value="c">C</option>
         </select>
+
+        <!-- FORM element: input[type="file"]
+          div::custom-file >> 
+          input::form-control-file(不影響外觀，display設為block)/ custom-file-input(會讓元素完全透明) >>
+          label::custom-file-label  -->
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputFile">
+          <label class="custom-file-label" for="inputFile"></label>
+        </div>
       </div>
       
 
