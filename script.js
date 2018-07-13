@@ -102,4 +102,18 @@ $(function(){
 
     //TOOLTIP
     $('[data-toggle="tooltip"]').tooltip()
+
+    //FORM VALIDATE
+    $('#form-demo').on('submit', function(event){
+      const form = $(this)
+
+      //如果沒有通過驗證
+      if(form[0].checkValidity() === false) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      //通過驗證
+      form.addClass("was-validated");
+    })
   });

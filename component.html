@@ -613,7 +613,27 @@
         </div>
       </div>
       
-
+      <div class="component demo">
+        <!-- FORM驗證 
+            form:: novalidate 防止瀏覽器的默認行為
+            input::required 必填欄位
+            invalid-feedback 驗證失敗時顯示文字 -->
+        <form id="form-demo" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="輸入..." required>
+            <div class="invalid-feedback">
+              請在輸入框輸入內容
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="輸入..." required>
+            <div class="invalid-feedback">
+              請在輸入框輸入內容
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info">提交</button>
+        </form>
+      </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
