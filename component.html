@@ -564,6 +564,24 @@
             C
           </label>
         </div>
+
+        <!-- 自定義樣式:checkbox 
+            label::custom-control & custom-checkbox >> input::custom-control-input + id >> 
+            label::custom-control-label + for="id" -->
+        <div class="form-check form-check-inline">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheckbox">
+            <label for="customCheckbox" class="custom-control-label">A</label>
+          </label>
+        </div>
+        <!-- 自定義樣式:radio
+          label::custom-control & custom-radio >> input::custom-control-input + id >> label::custom-control-label + for="id" -->
+        <div class="form-check form-check-inline">
+          <label class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customRadio">
+            <label for="customRadio" class="custom-control-label">A</label>
+          </label>
+        </div>
       </div>
       
 
